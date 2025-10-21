@@ -21,7 +21,7 @@ services:
     image: datadog/agent:latest
     container_name: datadog-agent
     environment:
-      - DD_API_KEY=90e7aefb353e514610d0c8ea831dfdf0  # Replace with your actual Datadog API key
+      - DD_API_KEY  # Replace with your actual Datadog API key
       - DD_LOGS_ENABLED=true
       - DD_LOGS_CONFIG_CONTAINER_COLLECT_ALL=true
       - DD_APM_ENABLED=true
@@ -34,7 +34,6 @@ services:
     networks:
       - default
 
-services:
   # ******************
   # Core Demo Services
   # ******************
